@@ -22,3 +22,7 @@ Route::get('/login', function () {
 Route::get('registrar', function () {
     return view('registrar');
 });
+/*
+Route::get('registrar', [RegistrarController::class, 'index'])->name('registrar');
+Route::post('/registrar', [RegistrarController::class, 'store']);
+*/

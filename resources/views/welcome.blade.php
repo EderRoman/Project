@@ -5,7 +5,6 @@
 @section('welcome')
 
  Aqui se empieza con las vistas del inicio
-<i class="bi bi-caret-right-fill"></i>
 @endsection
 
 

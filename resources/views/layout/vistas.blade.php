@@ -6,11 +6,10 @@
 
         <title>WankaNat</title>
 
-        <!-- Fonts -->
-        <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-
-        <!-- Styles -->
-
+        <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="{{ asset('plugins/fontawesome-free/css/all.min.css') }}">
         @vite('resources/css/app.css')
 
     </head>
@@ -20,57 +19,19 @@
      <nav id="header" class="main-header navbar navbar-expand navbar-dark navbar-toggler-right">
       <!-- Left navbar links -->
      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
-        </li>
-        <li class="nav-item d-none d-sm-inline-block">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
         <a href="/" class="nav-link">Home</a>
-        </li>
-      </ul>
-       
-  
-      <!-- Right navbar links -->
-      <ul class="navbar-nav ml-auto">
-        <!-- Navbar Search -->
-          <li class="nav-item d-none d-sm-inline-block">
-            <a href="/registrar" class="nav-link">Registrar</a> 
-          </li>
-          <li class="nav-item d-none d-sm-inline-block">
-            <a href="/login" class="nav-link">Login</a> 
-          </li>
-        
-        <li class="nav-item">
-          <a class="nav-link" data-widget="navbar-search" href="#" role="button">
-            <i class="bi bi-caret-right-fill"></i>
-          </a>
-          <div class="navbar-search-block">
-            <form class="form-inline">
-              <div class="input-group input-group-sm">
-                <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
-                <div class="input-group-append">
-                  <button class="btn btn-navbar" type="submit">
-                    <i class="fas fa-search"></i>
-                  </button>
-                  <button>Inicio</button>
-                  <button class="btn btn-navbar" type="button" data-widget="navbar-search">
-                    <i class="fas fa-times"></i>
-                  </button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </li>
-    
-        <!-- Messages Dropdown Menu -->
-        
-        <!-- Notifications Dropdown Menu -->
-
-        <li class="nav-item">
-          <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
-            <i class="fas fa-th-large"></i>
-          </a>
-        </li>
-      </ul>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="/login" class="nav-link">Login</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="/registrar" class="nav-link">Registrar</a>
+      </li>
+    </ul>
     </nav>
     <!-- /.navbar -->
 
@@ -79,15 +40,18 @@
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
 
 
-    <!-- Sidebar -->
+    <a href="index3.html" class="brand-link">
+      <img src="{{asset('img/logo1.jpg')}}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">WankaNat</span>
+    </a>
     <div class="sidebar">
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="{{ asset('img/logo1.jpg') }}" class="img-circle elevation-2" alt="User Image">
+          <img src="{{asset('dist/img/user1-128x128.jpg')}}" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">WankaNat</a>
+          <a href="#" class="d-block">Administrador</a>
         </div>
       </div>
 
@@ -96,60 +60,32 @@
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-               <li class="nav-item">
-                <a href="/" class="nav-link">
-                  <i class="nav-icon fas fa-columns"></i>
-                  <p>
-                    Sistema de WankaNat
-                  </p>
-                </a>
-              </li>
-
-              <li class="nav-item">
-                <a href="/" class="nav-link">
-                  <i class="bi bi-caret-right-fill"></i>
-                  <p>
-                    Servicios
-                  </p>
-                </a>
-              </li>
-
+          
+         
           <li class="nav-item">
-            <a href="/" class="nav-link">
-              <i class="nav-icon fas fa-address-book"></i>
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-user"></i>
               <p>
                 Clientes
               </p>
             </a>
           </li>
-
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-money-check-alt"></i>
+              <i class="nav-icon fas fa-ice-cream">
+              </i>
               <p>
-                Ventas
+                Productos
               </p>
             </a>
           </li>
-          
           <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-suitcase"></i>
+            <a href="#" class="nav-link"><i class="nav-icon fas fa-chart-pie"></i>
               <p>
-                Caja
+                Costos
               </p>
             </a>
           </li>
-
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-at"></i>
-              <p>
-                Usuarios
-              </p>
-            </a>
-          </li>
-
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
@@ -158,7 +94,7 @@
   </aside>
   <div class="text-center"><i class="bi bi-caret-right-fill">@yield('welcome')</i></div>
 
-  <div>@yield('login')</div>
+  <div>@yield('login_contenido')</div>
 
   <div>@yield('registrar')</div>
 
@@ -171,5 +107,11 @@
   </footer>
 
 
-    </body>
+  <!--
+   Resolve conflict in jQuery UI tooltip with Bootstrap tooltip 
+<script>
+  $.widget.bridge('uibutton', $.ui.button)
+</script>
+ -->
+</body>
 </html>
